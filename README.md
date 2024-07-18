@@ -49,27 +49,15 @@ You can download and build ESTabBarControllerExample project, and you will find 
 ```
 ...
 dependencies: [
-    .package(name: "ESTabBarController", url: "https://github.com/eggswift/ESTabBarController.git", from: "2.9.0-spm")
+    .package(name: "ESTabBarController", url: "https://github.com/MobileDev-iOS-ICT/ESTabBarController.git", from: "master")
 ]
 ...
-```
-
-### CocoaPods
-
-``` ruby
-pod "ESTabBarController-swift"
-```
-
-### Carthage
-
-```ruby
-github "eggswift/ESTabBarController"
 ```
 
 ### Manually
 
 ``` ruby
-git clone https://github.com/eggswift/ESTabBarController.git
+git clone https://github.com/MobileDev-iOS-ICT/ESTabBarController.git
 open ESTabBarController
 ```
 
