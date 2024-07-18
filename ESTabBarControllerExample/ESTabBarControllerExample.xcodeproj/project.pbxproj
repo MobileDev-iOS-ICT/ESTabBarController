@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6724541D2C49026D00DFA041 /* ESTabBarController in Frameworks */ = {isa = PBXBuildFile; productRef = 6724541C2C49026D00DFA041 /* ESTabBarController */; };
 		91EE91BC2A0A55200070C8FC /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 91EE91BB2A0A55200070C8FC /* Lottie */; };
 		91EE91BF2A0A59AA0070C8FC /* pop in Frameworks */ = {isa = PBXBuildFile; productRef = 91EE91BE2A0A59AA0070C8FC /* pop */; };
-		91EE91C22A0A5A090070C8FC /* ESTabBarController in Frameworks */ = {isa = PBXBuildFile; productRef = 91EE91C12A0A5A090070C8FC /* ESTabBarController */; };
 		F6858F411E4F435C002DAF6C /* IconTransitions.json in Resources */ = {isa = PBXBuildFile; fileRef = F6858F3F1E4F435C002DAF6C /* IconTransitions.json */; };
 		F6858F441E4F436F002DAF6C /* ExampleLottieAnimateContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6858F431E4F436F002DAF6C /* ExampleLottieAnimateContentView.swift */; };
 		F6858F491E4F45A9002DAF6C /* LottieLogo1.json in Resources */ = {isa = PBXBuildFile; fileRef = F6858F481E4F45A9002DAF6C /* LottieLogo1.json */; };
@@ -72,7 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91EE91BF2A0A59AA0070C8FC /* pop in Frameworks */,
-				91EE91C22A0A5A090070C8FC /* ESTabBarController in Frameworks */,
+				6724541D2C49026D00DFA041 /* ESTabBarController in Frameworks */,
 				91EE91BC2A0A55200070C8FC /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,7 +233,7 @@
 			packageProductDependencies = (
 				91EE91BB2A0A55200070C8FC /* Lottie */,
 				91EE91BE2A0A59AA0070C8FC /* pop */,
-				91EE91C12A0A5A090070C8FC /* ESTabBarController */,
+				6724541C2C49026D00DFA041 /* ESTabBarController */,
 			);
 			productName = ESTabBarControllerExample;
 			productReference = F6EE45541E4AC173001E0FA1 /* Example.app */;
@@ -269,7 +269,7 @@
 			packageReferences = (
 				91EE91BA2A0A55200070C8FC /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				91EE91BD2A0A59AA0070C8FC /* XCRemoteSwiftPackageReference "pop" */,
-				91EE91C02A0A5A090070C8FC /* XCRemoteSwiftPackageReference "ESTabBarController" */,
+				6724541B2C49026D00DFA041 /* XCRemoteSwiftPackageReference "ESTabBarController" */,
 			);
 			productRefGroup = F6EE45551E4AC173001E0FA1 /* Products */;
 			projectDirPath = "";
@@ -472,7 +472,7 @@
 				DEVELOPMENT_TEAM = BNZ74W4Z78;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ESTabBarControllerExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -493,7 +493,7 @@
 				DEVELOPMENT_TEAM = BNZ74W4Z78;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ESTabBarControllerExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -530,6 +530,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		6724541B2C49026D00DFA041 /* XCRemoteSwiftPackageReference "ESTabBarController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MobileDev-iOS-ICT/ESTabBarController";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		91EE91BA2A0A55200070C8FC /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
@@ -546,17 +554,14 @@
 				kind = branch;
 			};
 		};
-		91EE91C02A0A5A090070C8FC /* XCRemoteSwiftPackageReference "ESTabBarController" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/eggswift/ESTabBarController.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6724541C2C49026D00DFA041 /* ESTabBarController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6724541B2C49026D00DFA041 /* XCRemoteSwiftPackageReference "ESTabBarController" */;
+			productName = ESTabBarController;
+		};
 		91EE91BB2A0A55200070C8FC /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 91EE91BA2A0A55200070C8FC /* XCRemoteSwiftPackageReference "lottie-ios" */;
@@ -566,11 +571,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 91EE91BD2A0A59AA0070C8FC /* XCRemoteSwiftPackageReference "pop" */;
 			productName = pop;
-		};
-		91EE91C12A0A5A090070C8FC /* ESTabBarController */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 91EE91C02A0A5A090070C8FC /* XCRemoteSwiftPackageReference "ESTabBarController" */;
-			productName = ESTabBarController;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
